@@ -2,6 +2,10 @@
   --h2-font-size: 2rem;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   text-align: center;
   background: radial-gradient(
@@ -12,6 +16,7 @@ body {
     rgb(234, 251, 251) 77.6%,
     rgb(240, 251, 244) 100.7%
   );
+  background-repeat: none;
 }
 
 .container {
