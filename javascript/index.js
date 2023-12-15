@@ -1,7 +1,12 @@
+//London
 let londonElement = document.querySelector("#london");
 let londonDate = londonElement.querySelector(".date");
 let londonTime = londonElement.querySelector(".time");
 
-londonTime.innerHTML = "Happy coding!";
+londonDate.innerHTML = `<div class="date">${moment().format(
+  "MMMM Do YYYY"
+)}</div>`;
 
-londonDate.innerHTML = "Happy coding!";
+londonTime.innerHTML = `<div class="time">${moment().format(
+  "hh:mm:ss"
+)} <section>${moment().format("A")}</section></div>`;
