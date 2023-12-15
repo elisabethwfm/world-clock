@@ -32,7 +32,9 @@ function updateCity(event) {
   let cityName = this.options[this.selectedIndex].text;
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = `<div class="city" >
+  citiesElement.innerHTML += ` 
+  <hr>
+  <div class="city" >
           <h2>
               ${cityName}</h2>
           
@@ -41,8 +43,7 @@ function updateCity(event) {
           )} <section>${moment().format("A")}</section></div>
           <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
         
-        </div>
-        <hr>`;
+        </div>`;
 }
 
 showTime();
