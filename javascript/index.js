@@ -62,6 +62,10 @@ function updateCity(event) {
         </div>
         
         <a href="/">🔙</a>`;
+
+  setTimeout(() => {
+    updateCity(event);
+  }, 1000);
 }
 
 // function currentTimeZone(event) {
