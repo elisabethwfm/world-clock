@@ -44,8 +44,12 @@ function updateCity(event) {
             "hh:mm:ss"
           )} <section>${moment().format("A")}</section></div>
           <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+
+          
         
-        </div>`;
+        </div>
+        
+        <a href="/">🔙</a>`;
 }
 
 // function currentTimeZone(event) {
