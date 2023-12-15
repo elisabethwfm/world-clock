@@ -12,6 +12,18 @@ function showTime() {
     .tz("Europe/London")
     .format("hh:mm:ss")} <section>${moment().format("A")}</section></div>`;
 
+  let dubaiElement = document.querySelector("#dubai");
+  let dubaiDate = dubaiElement.querySelector(".date");
+  let dubaiTime = dubaiElement.querySelector(".time");
+
+  dubaiDate.innerHTML = `<div class="date">${moment()
+    .tz("Asia/Dubai")
+    .format("MMMM Do YYYY")}</div>`;
+
+  dubaiTime.innerHTML = `<div class="time">${moment()
+    .tz("Asia/Dubai")
+    .format("hh:mm:ss")} <section>${moment().format("A")}</section></div>`;
+
   //Vienna
   let viennaElement = document.querySelector("#vienna");
   let viennaDate = viennaElement.querySelector(".date");
