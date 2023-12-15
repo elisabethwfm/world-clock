@@ -1,5 +1,6 @@
-let londonTime = document.querySelector("#london .time");
-let londonDate = document.querySelector("#london .date");
+let londonElement = document.querySelector("#london");
+let londonDate = londonElement.querySelector(".date");
+let londonTime = londonElement.querySelector(".time");
 
 londonTime.innerHTML = "Happy coding!";
 
