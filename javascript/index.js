@@ -26,5 +26,15 @@ function showTime() {
     .format("hh:mm:ss")} <section>${moment().format("A")}</section></div>`;
 }
 
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  console.log(cityTime.format("MMMM Do YYYY"));
+}
+
 showTime();
 setInterval(showTime, 1000);
+
+let citiesSelectElement = document.querySelector("#city");
+
+citiesSelectElement.addEventListener("change", updateCity);
